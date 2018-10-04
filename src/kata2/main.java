@@ -12,14 +12,14 @@ public class main {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        Integer[] data = {1,1,1,1,0,0,3,3,5};
+        String[] data = {"luis", "miguel", "andres", "luis", "luis", "andres"};
         
         Histogram histo = new Histogram(data);
         
-        Map<Integer, Integer> histogr = histo.getHistogram();
+        Map<String, Integer> histogr = histo.getHistogram();
         
-        for (Integer i : histogr.keySet()) {
-            System.out.println(i + "==>" + histogr.get(i));
+        for (String i : histogr.keySet()) {
+            System.out.println(i + " ==> " + histogr.get(i));
         }          
     }
     
